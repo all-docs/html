@@ -2,7 +2,7 @@
 <div class="notecard warning">
 <p><strong>Warning:</strong>
 This element used to be called the "Underline" element in older versions of HTML, and is still sometimes misused in this way. To underline text, you should instead apply a style that includes the CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"><code>text-decoration</code></a> property set to <code>underline</code>.</p>
-</div></div><section aria-labelledby="try_it"><h2 id="try_it"><a href="#try_it">Try it</a></h2><div class="section-content"><iframe class="interactive is-tabbed-shorter-height" height="200" src="https://interactive-examples.mdn.mozilla.net/pages/tabbed/u.html" title="MDN Web Docs Interactive Example" allow="clipboard-write" loading="lazy"></iframe>
+</div></div><section aria-labelledby="try_it"><h2 id="try_it"><a href="#try_it">Try it</a></h2><div class="section-content"><a href="https://interactive-examples.mdn.mozilla.net/pages/tabbed/u.html">MDN Web Docs Interactive Example</a>
 <p>See the <a href="#usage_notes">Usage notes</a> section for further details on when it's appropriate to use <code>&lt;u&gt;</code> and when it isn't.</p></div></section><section aria-labelledby="attributes"><h2 id="attributes"><a href="#attributes">Attributes</a></h2><div class="section-content"><p>This element only includes the <a href="../Global_attributes.html">global attributes</a>.</p></div></section><section aria-labelledby="usage_notes"><h2 id="usage_notes"><a href="#usage_notes">Usage notes</a></h2><div class="section-content"><p>Along with other pure styling elements, the original HTML Underline (<code>&lt;u&gt;</code>) element was deprecated in HTML 4; however, <code>&lt;u&gt;</code> was restored in HTML 5 with a new, semantic, meaning: to mark text as having some form of non-textual annotation applied.</p>
 <div class="notecard note">
 <p><strong>Note:</strong>
@@ -32,7 +32,7 @@ Avoid using the <code>&lt;u&gt;</code> element with its default styling (of unde
 <p>This CSS indicates that when the <code>&lt;u&gt;</code> element is styled with the class <code>spelling</code>, it should have a red wavy underline underneath its text. This is a common styling for spelling errors. Another common style can be presented using <code>red dashed underline</code>.</p>
 <h4 id="result">Result</h4>
 <p>The result should be familiar to anyone who has used any of the more popular word processors available today.</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Indicating a spelling error sample" id="frame_indicating_a_spelling_error" width="650" height="80" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/u/" data-live-id="indicating_a_spelling_error" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="avoiding_u"><h3 id="avoiding_u"><a href="#avoiding_u">Avoiding &lt;u&gt;</a></h3><div class="section-content"><p>Most of the time, you actually don't want to use <code>&lt;u&gt;</code>. Here are some examples that show what you should do instead in several cases.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Indicating a spelling error sample</a></div></div></section><section aria-labelledby="avoiding_u"><h3 id="avoiding_u"><a href="#avoiding_u">Avoiding &lt;u&gt;</a></h3><div class="section-content"><p>Most of the time, you actually don't want to use <code>&lt;u&gt;</code>. Here are some examples that show what you should do instead in several cases.</p>
 <h4 id="non-semantic_underlines">Non-semantic underlines</h4>
 <p>To underline text without implying any semantic meaning, use a <a href="span.html"><code>&lt;span&gt;</code></a> element with the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"><code>text-decoration</code></a> property set to <code>"underline"</code>, as shown below.</p>
 <h5 id="html_2">HTML</h5>
@@ -46,13 +46,13 @@ Chicken Noodle Soup With Carrots
 }
 </code></pre></div>
 <h5 id="result_2">Result</h5>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Non-semantic underlines sample" id="frame_non-semantic_underlines" width="650" height="80" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/u/" data-live-id="non-semantic_underlines" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Non-semantic underlines sample</a></div>
 <h4 id="presenting_a_book_title">Presenting a book title</h4>
 <p>Book titles should be presented using the <a href="cite.html"><code>&lt;cite&gt;</code></a> element instead of <code>&lt;u&gt;</code> or even <code>&lt;i&gt;</code>.</p>
 <h5 id="using_the_cite_element">Using the cite element</h5>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;p&gt;The class read &lt;cite&gt;Moby-Dick&lt;/cite&gt; in the first term.&lt;/p&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Using the cite element sample" id="frame_using_the_cite_element" width="650" height="80" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/u/" data-live-id="using_the_cite_element" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Using the cite element sample</a></div>
 <h5 id="styling_the_cite_element">Styling the cite element</h5>
 <p>The default styling for the <code>&lt;cite&gt;</code> element renders the text in italics. You can override that using CSS:</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;p&gt;The class read &lt;cite&gt;Moby-Dick&lt;/cite&gt; in the first term.&lt;/p&gt;
@@ -62,7 +62,7 @@ Chicken Noodle Soup With Carrots
   text-decoration: underline;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Styling the cite element sample" id="frame_styling_the_cite_element" width="650" height="80" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/u/" data-live-id="styling_the_cite_element" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="technical_summary"><h2 id="technical_summary"><a href="#technical_summary">Technical summary</a></h2><div class="section-content"><figure class="table-container"><table class="properties">
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Styling the cite element sample</a></div></div></section><section aria-labelledby="technical_summary"><h2 id="technical_summary"><a href="#technical_summary">Technical summary</a></h2><div class="section-content"><figure class="table-container"><table class="properties">
   <tbody>
     <tr>
       <th scope="row">

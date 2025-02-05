@@ -33,7 +33,7 @@ While you can toggle between the open and closed states of non-modal dialog boxe
 &lt;/dialog&gt;
 </code></pre></div>
 <h4 id="result">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="HTML-only dialog sample" id="frame_html-only_dialog" width="100%" height="200" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/dialog/" data-live-id="html-only_dialog" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">HTML-only dialog sample</a></div>
 <div class="notecard note">
 <p><strong>Note:</strong>
 Reload the page to reset the output.</p>
@@ -77,7 +77,7 @@ closeButton.addEventListener("click", () =&gt; {
 });
 </code></pre></div>
 <h4 id="result_2">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Creating a modal dialog sample" id="frame_creating_a_modal_dialog" width="100%" height="200" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/dialog/" data-live-id="creating_a_modal_dialog" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Creating a modal dialog sample</a></div>
 <p>When the modal dialog is displayed, it appears above any other dialogs that might be present. Everything outside the modal dialog is inert and interactions outside the dialog are blocked. Notice that when the dialog is open, with the exception of the dialog itself, interaction with the document is not possible; the "Show the dialog" button is mostly obfuscated by the almost opaque backdrop of the dialog and is inert.</p></div></section><section aria-labelledby="handling_the_return_value_from_the_dialog"><h3 id="handling_the_return_value_from_the_dialog"><a href="#handling_the_return_value_from_the_dialog">Handling the return value from the dialog</a></h3><div class="section-content"><p>This example demonstrates the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue"><code>returnValue</code></a> of the <code>&lt;dialog&gt;</code> element and how to close a modal dialog by using a form. By default, the <code>returnValue</code> is the empty string or the value of the button that submits the form within the <code>&lt;dialog&gt;</code> element, if there is one.</p>
 <p>This example opens a modal dialog when the "Show the dialog" button is activated. The dialog contains a form with a <a href="select.html"><code>&lt;select&gt;</code></a> and two <a href="button.html"><code>&lt;button&gt;</code></a> elements, which default to <code>type="submit"</code>. An event listener updates the value of the "Confirm" button when the select option changes. If the "Confirm" button is activated to close the dialog, the current value of the button is the return value. If the dialog is closed by pressing the "Cancel" button, the <code>returnValue</code> is <code>cancel</code>.</p>
 <p>When the dialog is closed, the return value is displayed under the "Show the dialog" button. If the dialog is closed by pressing the <kbd>Esc</kbd> key, the <code>returnValue</code> is not updated, and the <code>close</code> event doesn't occur, so the text in the <a href="output.html"><code>&lt;output&gt;</code></a> is not updated.</p>
@@ -134,7 +134,7 @@ confirmBtn.addEventListener("click", (event) =&gt; {
 });
 </code></pre></div>
 <h4 id="result_3">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Handling the return value from the dialog sample" id="frame_handling_the_return_value_from_the_dialog" width="100%" height="300" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/dialog/" data-live-id="handling_the_return_value_from_the_dialog" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Handling the return value from the dialog sample</a></div>
 <p>The above examples demonstrate the following three methods of closing modal dialogs:</p>
 <ul>
 <li>By submitting the form within the dialog form using the <code>dialog</code> method (as seen in the <a href="#html-only_dialog">HTML-only example</a>).</li>
@@ -188,7 +188,7 @@ jsCloseBtn.addEventListener("click", (e) =&gt; {
 });
 </code></pre></div>
 <h4 id="result_4">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Closing a dialog with a required form input sample" id="frame_closing_a_dialog_with_a_required_form_input" width="100%" height="300" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/dialog/" data-live-id="closing_a_dialog_with_a_required_form_input" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Closing a dialog with a required form input sample</a></div>
 <p>From the output, we see it is impossible to close the dialog using the <em>Normal close</em> button. But the dialog can be closed if we bypass the form validation using the <code>formnovalidate</code> attribute on the <em>Cancel</em> button. Programmatically, <code>dialog.close()</code> will also close such dialog.</p></div></section><section aria-labelledby="animating_dialogs"><h3 id="animating_dialogs"><a href="#animating_dialogs">Animating dialogs</a></h3><div class="section-content"><p><code>&lt;dialog&gt;</code>s are set to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"><code>display: none;</code></a> when hidden and <code>display: block;</code> when shown, as well as being removed from / added to the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Top_layer">top layer</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work#building_the_accessibility_tree">accessibility tree</a>. Therefore, for <code>&lt;dialog&gt;</code> elements to be animated the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"><code>display</code></a> property needs to be animatable. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display#browser_compatibility">Supporting browsers</a> animate <code>display</code> with a variation on the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties#discrete">discrete animation type</a>. Specifically, the browser will flip between <code>none</code> and another value of <code>display</code> so that the animated content is shown for the entire animation duration.</p>
 <p>So for example:</p>
 <ul>
@@ -301,7 +301,7 @@ closeBtn.addEventListener("click", () =&gt; {
 </code></pre></div>
 <h5 id="result_5">Result</h5>
 <p>The code renders as follows:</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Transitioning dialog elements sample" id="frame_transitioning_dialog_elements" width="100%" height="200" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/dialog/" data-live-id="transitioning_dialog_elements" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Transitioning dialog elements sample</a></div>
 <div class="notecard note">
 <p><strong>Note:</strong>
 Because <code>&lt;dialog&gt;</code>s change from <code>display: none</code> to <code>display: block</code> each time they are shown, the <code>&lt;dialog&gt;</code> transitions from its <code>@starting-style</code> styles to its <code>dialog[open]</code> styles every time the entry transition occurs. When the <code>&lt;dialog&gt;</code> closes, it transitions from its <code>dialog[open]</code> state to the default <code>dialog</code> state.</p>
@@ -400,7 +400,7 @@ closeBtn.addEventListener("click", () =&gt; {
 </code></pre></div>
 <h5 id="result_6">Result</h5>
 <p>The code renders as follows:</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="dialog keyframe animations sample" id="frame_dialog_keyframe_animations" width="100%" height="200" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/dialog/" data-live-id="dialog_keyframe_animations" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="technical_summary"><h2 id="technical_summary"><a href="#technical_summary">Technical summary</a></h2><div class="section-content"><figure class="table-container"><table class="properties">
+<div class="code-example"><div class="example-header"></div><a href="about:blank">dialog keyframe animations sample</a></div></div></section><section aria-labelledby="technical_summary"><h2 id="technical_summary"><a href="#technical_summary">Technical summary</a></h2><div class="section-content"><figure class="table-container"><table class="properties">
   <tbody>
     <tr>
       <th scope="row">

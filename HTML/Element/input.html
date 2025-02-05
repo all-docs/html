@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-US" prefix="og: https://ogp.me/ns#"><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/HTML/Element/input by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 16:49:30 GMT --><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://developer.mozilla.org/favicon-48x48.bc390275e955dacb2e65.png"><link rel="apple-touch-icon" href="https://developer.mozilla.org/apple-touch-icon.528534bba673c38049c2.png"><meta name="theme-color" content="#ffffff"><link rel="manifest" href="https://developer.mozilla.org/manifest.f42880861b394dd4dc9b.json"><link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/opensearch.xml" title="MDN Web Docs"><title>&lt;input&gt;: The HTML Input element - HTML</title><link rel="alternate" title="<input>: Das HTML-Eingabeelement" href="https://developer.mozilla.org/de/docs/Web/HTML/Element/input" hreflang="de"><link rel="alternate" title="input" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input" hreflang="es"><link rel="alternate" title="<input> : l'élément de saisie dans un formulaire" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input" hreflang="fr"><link rel="alternate" title="<input>: 入力欄（フォーム入力）要素" href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input" hreflang="ja"><link rel="alternate" title="<input>" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input" hreflang="pt"><link rel="alternate" title="<input>" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/input" hreflang="ru"><link rel="alternate" title="<input>：输入（表单输入）元素" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" hreflang="zh"><link rel="alternate" title="<input>: The HTML Input element" href="input.html" hreflang="en"><link rel="preload" as="font" type="font/woff2" href="https://developer.mozilla.org/static/media/Inter.var.c2fe3cb2b7c746f7966a.woff2" crossorigin=""><link rel="alternate" type="application/rss+xml" title="MDN Blog RSS Feed" href="https://developer.mozilla.org/en-US/blog/rss.xml" hreflang="en"><meta name="description" content="The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes."><meta property="og:url" content="input.html"><meta property="og:title" content="<input>: The HTML Input element - HTML: HyperText Markup Language | MDN"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:description" content="The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes."><meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.d893525a4fb5fb1f67a2.png"><meta property="og:image:type" content="image/png"><meta property="og:image:height" content="1080"><meta property="og:image:width" content="1920"><meta property="og:image:alt" content="The MDN Web Docs logo, featuring a blue accent color, displayed on a solid black background."><meta property="og:site_name" content="MDN Web Docs"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="MozDevNet"><link rel="canonical" href="input.html"><style media="print">.article-actions-container,.document-toc-container,.language-menu,.main-menu-toggle,.on-github,.page-footer,.place,.sidebar,.top-banner,.top-navigation-main,ul.prev-next{display:none!important}.main-page-content,.main-page-content pre{padding:2px}.main-page-content pre{border-left-width:2px}</style><link href="https://developer.mozilla.org/static/css/main.86fb378f.css" rel="stylesheet"></head><body><script>if(document.body.addEventListener("load",(t=>{t.target.classList.contains("interactive")&&t.target.setAttribute("data-readystate","complete")}),{capture:!0}),window&&document.documentElement){const t={light:"#ffffff",dark:"#1b1b1b"};try{const e=window.localStorage.getItem("theme");e&&(document.documentElement.className=e,document.documentElement.style.backgroundColor=t[e]);const o=window.localStorage.getItem("nop");o&&(document.documentElement.dataset.nop=o)}catch(t){console.warn("Unable to read theme from localStorage",t)}}</script><div id="root"><div class="page-wrapper  category-html document-page"><div class="main-wrapper"><main id="content" class="main-content  "><article class="main-page-content" lang="en-US"><header><h1>&lt;input&gt;: The HTML Input element</h1><details class="baseline-indicator high"><summary><span class="indicator" role="img" aria-label="Baseline Check"></span><h2>Baseline<!-- --> <span class="not-bold">Widely available</span></h2><div class="browsers"><span class="engine" title="Supported in Chrome and Edge"><span class="browser chrome supported" role="img" aria-label="Chrome check"></span><span class="browser edge supported" role="img" aria-label="Edge check"></span></span><span class="engine" title="Supported in Firefox"><span class="browser firefox supported" role="img" aria-label="Firefox check"></span></span><span class="engine" title="Supported in Safari"><span class="browser safari supported" role="img" aria-label="Safari check"></span></span></div><span class="icon icon-chevron "></span></summary><div class="extra"><p>This feature is well established and works across many devices and browser versions. It’s been available across browsers since<!-- --> <!-- -->July 2015<!-- -->.</p><ul><li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility" data-glean="baseline_link_learn_more" target="_blank" class="learn-more">Learn more</a></li><li><a href="#browser_compatibility" data-glean="baseline_link_bcd_table">See full compatibility</a></li><li><a href="https://survey.alchemer.com/s3/7634825/MDN-baseline-feedback?page=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Finput&amp;level=high" data-glean="baseline_link_feedback" class="feedback-link" target="_blank" rel="noreferrer">Report feedback</a></li></ul></div></details></header><div class="section-content"><p>The <strong><code>&lt;input&gt;</code></strong> <a href="../../HTML.html">HTML</a> element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and <a href="https://developer.mozilla.org/en-US/docs/Glossary/User_agent">user agent</a>. The <code>&lt;input&gt;</code> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</p></div><section aria-labelledby="try_it"><h2 id="try_it"><a href="#try_it">Try it</a></h2><div class="section-content"><iframe class="interactive is-tabbed-shorter-height" height="200" src="https://interactive-examples.mdn.mozilla.net/pages/tabbed/input-text.html" title="MDN Web Docs Interactive Example" allow="clipboard-write" loading="lazy"></iframe></div></section><section aria-labelledby="input_types"><h2 id="input_types"><a href="#input_types">&lt;input&gt; types</a></h2><div class="section-content"><p>How an <code>&lt;input&gt;</code> works varies considerably depending on the value of its <a href="#type"><code>type</code></a> attribute, hence the different types are covered in their own separate reference pages. If this attribute is not specified, the default type adopted is <code>text</code>.</p>
+<!DOCTYPE html><html lang="en-US" prefix="og: https://ogp.me/ns#"><!-- Mirrored from developer.mozilla.org/en-US/docs/Web/HTML/Element/input by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 16:49:30 GMT --><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://developer.mozilla.org/favicon-48x48.bc390275e955dacb2e65.png"><link rel="apple-touch-icon" href="https://developer.mozilla.org/apple-touch-icon.528534bba673c38049c2.png"><meta name="theme-color" content="#ffffff"><link rel="manifest" href="https://developer.mozilla.org/manifest.f42880861b394dd4dc9b.json"><link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/opensearch.xml" title="MDN Web Docs"><title>&lt;input&gt;: The HTML Input element - HTML</title><link rel="alternate" title="<input>: Das HTML-Eingabeelement" href="https://developer.mozilla.org/de/docs/Web/HTML/Element/input" hreflang="de"><link rel="alternate" title="input" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input" hreflang="es"><link rel="alternate" title="<input> : l'élément de saisie dans un formulaire" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input" hreflang="fr"><link rel="alternate" title="<input>: 入力欄（フォーム入力）要素" href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input" hreflang="ja"><link rel="alternate" title="<input>" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input" hreflang="pt"><link rel="alternate" title="<input>" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/input" hreflang="ru"><link rel="alternate" title="<input>：输入（表单输入）元素" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" hreflang="zh"><link rel="alternate" title="<input>: The HTML Input element" href="input.html" hreflang="en"><link rel="preload" as="font" type="font/woff2" href="https://developer.mozilla.org/static/media/Inter.var.c2fe3cb2b7c746f7966a.woff2" crossorigin=""><link rel="alternate" type="application/rss+xml" title="MDN Blog RSS Feed" href="https://developer.mozilla.org/en-US/blog/rss.xml" hreflang="en"><meta name="description" content="The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes."><meta property="og:url" content="input.html"><meta property="og:title" content="<input>: The HTML Input element - HTML: HyperText Markup Language | MDN"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:description" content="The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes."><meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.d893525a4fb5fb1f67a2.png"><meta property="og:image:type" content="image/png"><meta property="og:image:height" content="1080"><meta property="og:image:width" content="1920"><meta property="og:image:alt" content="The MDN Web Docs logo, featuring a blue accent color, displayed on a solid black background."><meta property="og:site_name" content="MDN Web Docs"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="MozDevNet"><link rel="canonical" href="input.html"><style media="print">.article-actions-container,.document-toc-container,.language-menu,.main-menu-toggle,.on-github,.page-footer,.place,.sidebar,.top-banner,.top-navigation-main,ul.prev-next{display:none!important}.main-page-content,.main-page-content pre{padding:2px}.main-page-content pre{border-left-width:2px}</style><link href="https://developer.mozilla.org/static/css/main.86fb378f.css" rel="stylesheet"></head><body><script>if(document.body.addEventListener("load",(t=>{t.target.classList.contains("interactive")&&t.target.setAttribute("data-readystate","complete")}),{capture:!0}),window&&document.documentElement){const t={light:"#ffffff",dark:"#1b1b1b"};try{const e=window.localStorage.getItem("theme");e&&(document.documentElement.className=e,document.documentElement.style.backgroundColor=t[e]);const o=window.localStorage.getItem("nop");o&&(document.documentElement.dataset.nop=o)}catch(t){console.warn("Unable to read theme from localStorage",t)}}</script><div id="root"><div class="page-wrapper  category-html document-page"><div class="main-wrapper"><main id="content" class="main-content  "><article class="main-page-content" lang="en-US"><header><h1>&lt;input&gt;: The HTML Input element</h1><details class="baseline-indicator high"><summary><span class="indicator" role="img" aria-label="Baseline Check"></span><h2>Baseline<!-- --> <span class="not-bold">Widely available</span></h2><div class="browsers"><span class="engine" title="Supported in Chrome and Edge"><span class="browser chrome supported" role="img" aria-label="Chrome check"></span><span class="browser edge supported" role="img" aria-label="Edge check"></span></span><span class="engine" title="Supported in Firefox"><span class="browser firefox supported" role="img" aria-label="Firefox check"></span></span><span class="engine" title="Supported in Safari"><span class="browser safari supported" role="img" aria-label="Safari check"></span></span></div><span class="icon icon-chevron "></span></summary><div class="extra"><p>This feature is well established and works across many devices and browser versions. It’s been available across browsers since<!-- --> <!-- -->July 2015<!-- -->.</p><ul><li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility" data-glean="baseline_link_learn_more" target="_blank" class="learn-more">Learn more</a></li><li><a href="#browser_compatibility" data-glean="baseline_link_bcd_table">See full compatibility</a></li><li><a href="https://survey.alchemer.com/s3/7634825/MDN-baseline-feedback?page=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Finput&amp;level=high" data-glean="baseline_link_feedback" class="feedback-link" target="_blank" rel="noreferrer">Report feedback</a></li></ul></div></details></header><div class="section-content"><p>The <strong><code>&lt;input&gt;</code></strong> <a href="../../HTML.html">HTML</a> element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and <a href="https://developer.mozilla.org/en-US/docs/Glossary/User_agent">user agent</a>. The <code>&lt;input&gt;</code> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</p></div><section aria-labelledby="try_it"><h2 id="try_it"><a href="#try_it">Try it</a></h2><div class="section-content"><a href="https://interactive-examples.mdn.mozilla.net/pages/tabbed/input-text.html">MDN Web Docs Interactive Example</a></div></section><section aria-labelledby="input_types"><h2 id="input_types"><a href="#input_types">&lt;input&gt; types</a></h2><div class="section-content"><p>How an <code>&lt;input&gt;</code> works varies considerably depending on the value of its <a href="#type"><code>type</code></a> attribute, hence the different types are covered in their own separate reference pages. If this attribute is not specified, the default type adopted is <code>text</code>.</p>
 <p>The available types are as follows:</p>
 <figure class="table-container"><table class="no-markdown">
   <colgroup>
@@ -22,7 +22,7 @@
       <td id="examplebutton">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="button" name="button" value="Button" /&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplebutton sample" id="frame_examplebutton" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplebutton" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplebutton sample</a></div>
       </td>
     </tr>
     <tr>
@@ -31,7 +31,7 @@
       <td id="examplecheckbox">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="checkbox" name="checkbox"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplecheckbox sample" id="frame_examplecheckbox" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplecheckbox" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplecheckbox sample</a></div>
       </td>
     </tr>
     <tr>
@@ -42,7 +42,7 @@
       <td id="examplecolor">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="color" name="color"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplecolor sample" id="frame_examplecolor" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplecolor" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplecolor sample</a></div>
       </td>
     </tr>
     <tr>
@@ -55,7 +55,7 @@
       <td id="exampledate">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="date" name="date"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampledate sample" id="frame_exampledate" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampledate" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampledate sample</a></div>
       </td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@
       <td id="exampledtl">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="datetime-local" name="datetime-local"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampledtl sample" id="frame_exampledtl" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampledtl" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampledtl sample</a></div>
       </td>
     </tr>
     <tr>
@@ -82,7 +82,7 @@
       <td id="exampleemail">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="email" name="email"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampleemail sample" id="frame_exampleemail" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleemail" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampleemail sample</a></div>
       </td>
     </tr>
     <tr>
@@ -94,7 +94,7 @@
       <td id="examplefile">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="file" accept="image/*, text/*" name="file"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplefile sample" id="frame_examplefile" width="100%" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplefile" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplefile sample</a></div>
       </td>
     </tr>
     <tr>
@@ -106,7 +106,7 @@
       <td id="examplehidden">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input id="userId" name="userId" type="hidden" value="abc123"&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplehidden sample" id="frame_examplehidden" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplehidden" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplehidden sample</a></div>
       </td>
     </tr>
     <tr>
@@ -118,7 +118,7 @@
       <td id="exampleimage">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="image" name="image" src="" alt="image input"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampleimage sample" id="frame_exampleimage" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleimage" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampleimage sample</a></div>
       </td>
     </tr>
     <tr>
@@ -127,7 +127,7 @@
       <td id="examplemonth">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="month" name="month"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplemonth sample" id="frame_examplemonth" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplemonth" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplemonth sample</a></div>
       </td>
     </tr>
     <tr>
@@ -140,7 +140,7 @@
       <td id="examplenumber">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="number" name="number"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplenumber sample" id="frame_examplenumber" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplenumber" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplenumber sample</a></div>
       </td>
     </tr>
     <tr>
@@ -152,7 +152,7 @@
       <td id="examplepassword">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="password" name="password"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplepassword sample" id="frame_examplepassword" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplepassword" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplepassword sample</a></div>
       </td>
     </tr>
     <tr>
@@ -163,7 +163,7 @@
       <td id="exampleradio">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="radio" name="radio"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampleradio sample" id="frame_exampleradio" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleradio" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampleradio sample</a></div>
       </td>
     </tr>
     <tr>
@@ -176,7 +176,7 @@
       <td id="examplerange">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="range" name="range" min="0" max="25"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplerange sample" id="frame_examplerange" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplerange" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplerange sample</a></div>
       </td>
     </tr>
     <tr>
@@ -187,7 +187,7 @@
       <td id="examplereset">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="reset" name="reset"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplereset sample" id="frame_examplereset" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplereset" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplereset sample</a></div>
       </td>
     </tr>
     <tr>
@@ -201,7 +201,7 @@
       <td id="examplesearch">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="search" name="search"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplesearch sample" id="frame_examplesearch" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplesearch" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplesearch sample</a></div>
       </td>
     </tr>
     <tr>
@@ -210,7 +210,7 @@
       <td id="examplesubmit">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="submit" name="submit"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="examplesubmit sample" id="frame_examplesubmit" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplesubmit" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">examplesubmit sample</a></div>
       </td>
     </tr>
     <tr>
@@ -222,7 +222,7 @@
       <td id="exampletel">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="tel" name="tel"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampletel sample" id="frame_exampletel" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampletel" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampletel sample</a></div>
       </td>
     </tr>
     <tr>
@@ -234,7 +234,7 @@
       <td id="exampletext">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="text" name="text"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampletext sample" id="frame_exampletext" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampletext" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampletext sample</a></div>
       </td>
     </tr>
     <tr>
@@ -243,7 +243,7 @@
       <td id="exampletime">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="time" name="time"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampletime sample" id="frame_exampletime" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampletime" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampletime sample</a></div>
       </td>
     </tr>
     <tr>
@@ -256,7 +256,7 @@
       <td id="exampleurl">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="url" name="url"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampleurl sample" id="frame_exampleurl" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleurl" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampleurl sample</a></div>
       </td>
     </tr>
     <tr>
@@ -267,7 +267,7 @@
       <td id="exampleweek">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="week" name="week"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampleweek sample" id="frame_exampleweek" width="200" height="60" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleweek" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampleweek sample</a></div>
       </td>
     </tr>
     <tr>
@@ -283,7 +283,7 @@
       <td id="exampledatetime">
         <div class="code-example"><pre class="brush: html hidden notranslate"><code>
 &lt;input type="datetime" name="datetime"/&gt;</code></pre></div>
-        <div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="exampledatetime sample" id="frame_exampledatetime" width="200" height="75" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampledatetime" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+        <div class="code-example"><div class="example-header"></div><a href="about:blank">exampledatetime sample</a></div>
       </td>
     </tr>
   </tbody>
@@ -1006,7 +1006,7 @@ When the data entered by the user doesn't adhere to the stepping configuration, 
   font-weight: bold;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Pseudo-classes example sample" id="frame_pseudo-classes_example" width="500" height="80" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="pseudo-classes_example" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="attribute_selectors"><h3 id="attribute_selectors"><a href="#attribute_selectors">Attribute selectors</a></h3><div class="section-content"><p>It is possible to target different types of form controls based on their <a href="#type"><code>type</code></a> using <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Attribute_selectors">attribute selectors</a>. CSS attribute selectors match elements based on either just the presence of an attribute or the value of a given attribute.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Pseudo-classes example sample</a></div></div></section><section aria-labelledby="attribute_selectors"><h3 id="attribute_selectors"><a href="#attribute_selectors">Attribute selectors</a></h3><div class="section-content"><p>It is possible to target different types of form controls based on their <a href="#type"><code>type</code></a> using <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Attribute_selectors">attribute selectors</a>. CSS attribute selectors match elements based on either just the presence of an attribute or the value of a given attribute.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>/* matches a password input */
 input[type="password"] {
 }
@@ -1040,7 +1040,7 @@ input[pattern] {
 }
 </code></pre></div>
 <h4 id="result">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="caret-color sample" id="frame_caret-color" width="500" height="80" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="caret-color" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="field-sizing"><h3 id="field-sizing"><a href="#field-sizing">field-sizing</a></h3><div class="section-content"><p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/field-sizing"><code>field-sizing</code></a> property enables you to control the sizing behavior of form inputs (i.e. they are given a default preferred size by default.) This property enables you to override the default behavior, allowing form controls to adjust in size to fit their contents.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">caret-color sample</a></div></div></section><section aria-labelledby="field-sizing"><h3 id="field-sizing"><a href="#field-sizing">field-sizing</a></h3><div class="section-content"><p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/field-sizing"><code>field-sizing</code></a> property enables you to control the sizing behavior of form inputs (i.e. they are given a default preferred size by default.) This property enables you to override the default behavior, allowing form controls to adjust in size to fit their contents.</p>
 <p>This property is typically used to create form fields that shrinkwrap their content and grow as more text is entered. This works with input types that accept direct text input (for example, <a href="input/text.html"><code>text</code></a> and <a href="input/url.html"><code>url</code></a>), input type <a href="input/file.html"><code>file</code></a>, and <a href="textarea.html"><code>&lt;textarea&gt;</code></a> elements.</p></div></section><section aria-labelledby="object-position_and_object-fit"><h3 id="object-position_and_object-fit"><a href="#object-position_and_object-fit">object-position and object-fit</a></h3><div class="section-content"><p>In certain cases (typically involving non-textual inputs and specialized interfaces), the <code>&lt;input&gt;</code> element is a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element">replaced element</a>. When it is, the position and size of the element's size and positioning within its frame can be adjusted using the CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position"><code>object-position</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"><code>object-fit</code></a> properties.</p></div></section><section aria-labelledby="styling"><h3 id="styling"><a href="#styling">Styling</a></h3><div class="section-content"><p>For more information about adding color to elements in HTML, see:</p>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Applying_color">Applying color to HTML elements using CSS</a>.</li>
@@ -1219,7 +1219,7 @@ nameInput.addEventListener("invalid", () =&gt; {
 });
 </code></pre></div>
 <p>The example renders like so:</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Custom validation error example sample" id="frame_custom_validation_error_example" src="about:blank" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="custom_validation_error_example" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Custom validation error example sample</a></div>
 <p>In brief:</p>
 <ul>
 <li>We check the valid state of the input element every time its value is changed by running the <code>checkValidity()</code> method via the <code>input</code> event handler.</li>
